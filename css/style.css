@@ -1,0 +1,406 @@
+@font-face{
+    font-family: arimo;
+    src: url("../fuente/arimo.ttf");
+}
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body { min-height: 100vh; }
+
+.caja_padre{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.img_login{
+    background-image: url(../img/cfe_login.png);
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover; 
+    width:632px;
+    height:550px;
+    margin: 20px;
+}
+
+.logo_login{
+    background-position: center;
+    background-size: cover; 
+    width:165px;
+    height:88px;
+}
+
+.login{
+    border-radius: 5px;
+    width:632px;
+    height:550px;
+    margin: 20px;
+}
+
+.footer{
+    background:#333333;
+    height: 67px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.informacion_footer{
+    padding-right: 462px;
+    font-family: arimo;
+}
+.informacion_footer p{
+    margin:10px;
+}
+
+.verde_trebol{
+    color: #04C484;
+}
+.gris{
+    color: #7C8C93;
+}
+
+.redes_sociales{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 232px;
+}
+.redes_sociales img{
+    height:24px; 
+    width:24px;
+    /* padding-left: 80px; */
+}
+
+h2{
+    font-size: 24px;
+    color: #000000;
+    font-family: arimo;
+}
+
+.texto_normal{
+    font-size: 16px;
+    font-family: arimo;
+}
+
+.texto_normal_negrita{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: arimo;
+}
+
+.letras_pequeñas{
+    font-size: 11px;
+    font-family: arimo;
+}
+
+.letras_pequeñas_negrita{
+    font-size: 11px;
+    font-weight: bold;
+    font-family: arimo;
+}
+
+.caja_padre_login{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 33px;
+}
+
+hr{
+    width: 200px;
+}
+
+.formulario_login{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.formulario_user{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+}
+
+input[type=text] {
+    background:#FFFFFF80; 
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+    width: 237px;
+}
+
+.gris{
+    color: #7C8C93;
+}
+
+.gris_carbono{
+    color: #00000080;
+    opacity: 0.5;
+}
+
+/* HOME */
+
+.caja_padre_home{
+    display: flex;
+    justify-content: left;
+    color: white;
+}
+
+.user{
+    max-width: 36px;
+    height: auto;
+}
+.flecha{
+    max-width: 10px;
+    height: auto;
+}
+
+.ocultar{
+    visibility: hidden;
+}
+
+.visible{
+    display: block;
+}
+
+.logo_menu{
+    text-align: center;
+}
+
+.menu hr{
+    border: none;
+    height: 0.1px;
+    background:#7C8C93;
+}
+
+.menu {
+    height: 506px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #222222;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 22px;
+}
+
+.item {
+    overflow: hidden;
+}
+
+.btn {
+    display: block;
+    padding: 16px 20px;
+    background: #222222;
+    color: white;
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    /* background: #7C8C93; */
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.smenu {
+    background: #333;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.smenu a {
+    display: block;
+    padding: 16px 26px;
+    color: white;
+    margin: 4px 0;
+    position: relative;
+}
+
+.smenu a::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    transition: .3s;
+    opacity: 0;
+}
+
+.smenu a:hover::before {
+    opacity: 1;
+}
+
+.item:target .smenu {
+    max-height: 10em;
+}
+/* div.scroll{
+    height: 506px;
+    overflow-x: hidden;
+    overflow-y: auto;
+} */
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+div.scroll {
+    height: 506px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+div.scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+div.scroll::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+div.scroll::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+div.scroll::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+div.scroll::-webkit-scrollbar-thumb {
+    background-color: #C4C4C480;
+    opacity: 50%;
+    border-radius: 20px;
+}
+
+div.scroll::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.menu a{
+    text-decoration:none;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.icono_navegacion{
+    padding-top: 9px;
+}
+.icono_navegacion img{
+    width: 13px;
+}
+
+.caja_hijo{
+    height: 550px;
+    width: 1000px;
+    margin:20px;
+    border-radius: 5px;
+}
+
+.portada_home{
+    width: 999px;
+    height: 518px;
+    border-radius: 5px;
+    /* background:yellow; */
+}
+
+.portada_home img{
+    width: 999px;
+    height: 518px;
+    border-radius: 5px;
+    /* background:yellow; */
+}
+
+.caja_uno_tramites{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    background: #F3F3F3;
+    padding: 19px;
+}
+.caja_dos_tramites{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    background: #F3F3F3;
+    padding: 19px;
+    display: none;
+}
+
+.caja_uno_tramites select{
+        background:#FFFFFF80; 
+        /* opacity: 50%; */
+        border: 1px solid #000000;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 3px;
+        width: 450px;
+}
+
+.portada_home hr{
+    width: 1000px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.verde_oscuro{
+    color: #2B4444;
+}
+
+.radio{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start; 
+}
+
+textarea{
+    background:#FFFFFF80; 
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 500px;
+    height: 100px;
+}
+
+button{
+    width: 132px;
+    height: 36px;
+    background: #04C484;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.logo_menu a{
+    padding:0;
+    margin: 0;
+}
+
+.li_caja{
+    padding: 17px;
+}
